@@ -1,0 +1,18 @@
+<h1><%= @library.libraryname %></h1>
+
+<p>
+    <time datetime="<%= @library.formatted_created_at %>">
+        <%= @library.formatted_created_at %>
+    </time>
+    <br>
+    <%= @library.libraryname %>
+    <br>
+    <%= @library.bookname %>
+    <br>
+    <%= @library.author %>
+    <br>
+    <%= @library.genre %>
+    <br>
+    <%= @library.user %>
+    <%= @library.readers_card %>
+</p>

@@ -1,0 +1,6 @@
+<h1>Bubble sorting starting array</h1>
+<%= form_with url: bubblesort_path, method: :post do |form| %>
+<%= form.label :inputarray, @mango %>
+<%= form.submit "Submit" %>
+<%= form.label :outputarray, @outputarr %>
+<% end %>

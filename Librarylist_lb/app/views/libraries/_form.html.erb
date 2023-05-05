@@ -1,0 +1,9 @@
+<%= form_with model: @library do |i| %><th></th>
+<%= i.text_field :libraryname, required: true, minlength: 2, placeholder: "library" %><th></th>
+<%= i.text_field :author, required: true, minlength: 2, placeholder: "author" %><th></th>
+<%= i.text_field :genre, required: true, minlength: 2, placeholder: "genres" %><th></th>
+<%= i.text_field :bookname, required: true, minlength: 2, placeholder: "bookname" %><th></th>
+<%= i.text_field :readers_card, required: false, placeholder: "readerscard" %><th></th>
+<%= i.text_field :user, required: false, placeholder: "user" %><th></th>
+<%= i.submit "Submit into table" %>
+<% end %>

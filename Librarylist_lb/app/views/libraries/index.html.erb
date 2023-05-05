@@ -1,0 +1,17 @@
+
+<h1>Libraries</h1>
+<% @libraries.each do |library| %>
+    <h2></h2>
+    <th><%= library.libraryname %></th>
+    <th><%= library.bookname %></th>
+    </table>
+    <p>
+        <%= library.bookname %>
+        <br>
+        <%= link_to 'Create', new_library_path(library) %>
+        <%= link_to 'Render', library_path(library) %>
+        <%= link_to 'Update', edit_library_path(library) %>
+        <%= link_to 'Delete', library_path(library), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
+<% end %>
+
